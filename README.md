@@ -120,7 +120,7 @@ func showPrivacyConsentFlow() {
 #### Explicit Consent
 Explicit consent must either be accepted or declined by the user. If consent is accepted, your app may proceed as usual. However, if consent is declined there are a few cases that you'll need to handle:
 
-- If your app will not function without the disclosed trackers, the customer should be prevented from using the app. Their only option is to modify their preferences or uninstall (similar to acception Terms and Conditions or not).
+- If your app will not function without the disclosed trackers, the customer should be prevented from using the app. Their only option is to modify their preferences or uninstall (similar to accepting Terms and Conditions or not).
 - If your app is fully functional without depending on any third party trackers, you can simply disable all optional trackers and let the user continue using the app.
 - If your app will allow the user to continue to use the app with limited functionality, notify the user about the limitations. You might say something like: "To enjoy the full functionality of this app, you must accept the privacy preferences in the app's settings. This app will now continue with limited functionality."
 - If necessary, inform the user that your app requires a restart before any newly-changed tracker settings can take effect. (Some trackers may require an app restart to be fully enabled/disabled.)
@@ -192,7 +192,7 @@ NSDictionary *updatedTrackers = [[AppNoticeSDK sharedInstance] getTrackerPrefere
 
 ### Localization and Text Customization
 
-The AppNotice SDK can support multiple languages (currently English only, but French, Italian, Dutch, German, Spanish and Portuguese will be available soon). If your app supports localization for a supported language, the AppNotice SDK will also be displayed in that langauge. To localize your app, you simply need a localization file in your project for each language you support. See [Apple's documentation](https://developer.apple.com/library/ios/documentation/MacOSX/Conceptual/BPInternational/LocalizingYourApp/LocalizingYourApp.html#//apple_ref/doc/uid/10000171i-CH5-SW2) for details on how to add localization to your app.
+The AppNotice SDK can support multiple languages (currently English, Spanish, Portuguese only, but French, Italian, Dutch, German, will be available soon). If your app supports localization for a supported language, the AppNotice SDK will also be displayed in that langauge. To localize your app, you simply need a localization file in your project for each language you support. See [Apple's documentation](https://developer.apple.com/library/ios/documentation/MacOSX/Conceptual/BPInternational/LocalizingYourApp/LocalizingYourApp.html#//apple_ref/doc/uid/10000171i-CH5-SW2) for details on how to add localization to your app.
 
 To customize any of the strings shown in the SDK:
 
