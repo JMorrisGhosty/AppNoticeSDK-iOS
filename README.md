@@ -61,7 +61,7 @@ Note that the SDK tracker list is only downloaded once and stored on the device 
 ### Swift
 
 ```swift
-AppNoticeSDK.sharedInstance().activateWithToken("bff0f04910354fb8a042650840056c9d")
+AppNoticeSDK.sharedInstance().activate(withToken: "bff0f04910354fb8a042650840056c9d")
 ```
 
 ### Objective-C
